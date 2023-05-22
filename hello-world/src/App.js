@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
+// import Hero from './components/Hero';
+// import ErrorBoundary from './components/ErrorBoundary';
+// import PortalDemo from './components/PortalDemo';
+// import FRParentInput from './components/FRParentInput';
+// import FocusInput from './components/FocusInput';
 // import PureComp from './components/PureComponent';
-import ParentComp from './components/ParentComp';
+// import ParentComp from './components/ParentComp';
+// import RefsDemo from './components/RefsDemo';
 // import FragmentsDemo from './FragmentsDemo';
 // import Inline from './components/Inline';
 // import NameList from './components/NameList';
@@ -27,7 +35,27 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <ParentComp />
+        <ClickCounter />
+        <HoverCounter />
+        {/* <ErrorBoundary>
+        <Hero heroName="superman"></Hero>
+        </ErrorBoundary>
+        
+        <ErrorBoundary>
+          <Hero heroName="Batman"></Hero>
+        </ErrorBoundary>
+        
+        <ErrorBoundary>
+          <Hero heroName="joker"></Hero>
+        </ErrorBoundary> */}
+
+         
+
+        {/* <PortalDemo /> */}
+        {/* <FRParentInput /> */}
+        {/* <FocusInput /> */}
+        {/* <RefsDemo /> */}
+        {/* <ParentComp /> */}
         {/* <Table /> */}
         {/* <FragmentsDemo /> */}
         {/* <LifeCycleA /> */}
