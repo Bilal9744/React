@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
-import ClickCounter from './components/ClickCounter';
-import HoverCounter from './components/HoverCounter';
+import ComponentC from './components/ComponentC';
+import { Userprovider } from './components/UserContext';
+// import ClickCounter2 from './components/ClickCounter2';
+// import HoverCounter2 from './components/HoverCounter2';
+// import Cunter from './components/Cunter';
+// import ClickCounter2 from './components/ClickCounter2';
+// import HoverCounter2 from './components/HoverCounter2';
+// import User from './components/User';
+// import ClickCounter from './components/ClickCounter';
+// import HoverCounter from './components/HoverCounter';
 // import Hero from './components/Hero';
 // import ErrorBoundary from './components/ErrorBoundary';
 // import PortalDemo from './components/PortalDemo';
@@ -35,8 +43,19 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <ClickCounter />
-        <HoverCounter />
+     <Userprovider value='vishwas'>  
+       <ComponentC />
+     </Userprovider>
+        {/* <Cunter>{(count,incrementCount) => 
+        <ClickCounter2 count={count} incrementCount={incrementCount} />}</Cunter>
+        <Cunter>{(count,incrementCount) => 
+        <HoverCounter2 count={count} incrementCount={incrementCount} />}</Cunter> */}
+
+        {/* <ClickCounter2 /> */}
+        {/* <HoverCounter2 /> */}
+        {/* <User render={(isLoggedIn) => isLoggedIn ? 'vishwas' : 'Guest'}/> */}
+        {/* <ClickCounter /> */}
+        {/* <HoverCounter /> */}
         {/* <ErrorBoundary>
         <Hero heroName="superman"></Hero>
         </ErrorBoundary>
